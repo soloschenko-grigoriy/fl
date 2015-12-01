@@ -351,7 +351,7 @@ module.exports = function (grunt) {
         'clean:server',
         'createDefaultTemplate',
         'handlebars',
-        'compass',
+        // 'compass',
         'connect:testserver',
         'exec:mocha'
     ]);
