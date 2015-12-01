@@ -1,0 +1,35 @@
+.navbar-inverse {
+  height: 80px;
+  background: $color-error;
+  border-radius: 0;
+  color: $color-main;
+  border:0;
+  border-bottom: 1px solid $color-main;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+  .navbar-nav > li > a,
+  .navbar-brand {
+    color: $color-white;
+    font-size: 18px;
+    font-weight: 300;
+    height: 80px;
+    line-height: 50px;
+    transition: all 250ms ease;
+  }
+  .navbar-nav > li > a .icon-plus,
+  .navbar-nav > li > a .icon-config{
+    display: inline-block;
+    height: 22px;
+    margin-top: -12px;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li > a:hover {
+    background-color: $color-main;
+  }
+
+}
+

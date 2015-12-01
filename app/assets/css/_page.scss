@@ -1,0 +1,16 @@
+.page{
+  padding: 0;
+
+  .page-head {
+    height: 80px;
+    background: $color-white;
+    color: $color-heads;
+    padding: 18px 32px 0;
+
+    .breadcrumb {
+      background: none;
+      margin-bottom: 0;
+      padding: 4px 2px;
+    }
+  }
+}

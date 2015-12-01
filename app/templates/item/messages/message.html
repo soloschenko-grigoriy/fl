@@ -1,0 +1,30 @@
+{{#if isMine}}
+<div class="media-left pull-left">
+  <img src="/assets/img/faces/2.jpg" class="img-circle img-sm" alt="Profile Picture">
+</div>
+<div class="media-body pl">
+  <div class="speech mb">
+    <div class="speech-header mb">
+      <div class="pull-left name"><a href="/profile/{{ author.id }}">{{ author.name }}</a></div>
+      <small class="pull-right"><i class="fa fa-clock-o"></i> {{#getDateTime created }}{{r}}{{/getDateTime}}</small>
+      <br class="clear" />
+    </div>
+    <p>{{ description }}</p>
+  </div>
+</div>
+{{else}}
+<div class="media-right pull-right">
+  <img src="/assets/img/faces/3.jpg" class="img-circle img-sm" alt="Profile Picture">
+</div>
+<div class="media-body pr speech-right">
+  <div class="speech mb">
+    <div class="speech-header mb">
+      <small class="pull-left"><i class="fa fa-clock-o"></i> {{#getDateTime created }}{{r}}{{/getDateTime}}</small>
+      <div class="pull-right name"><a href="/profile/{{ author.id }}">{{ author.name }}</a></div>
+      <br class="clear" />
+    </div>
+
+    <p>{{ description }}</p>
+  </div>
+</div>
+{{/if}}

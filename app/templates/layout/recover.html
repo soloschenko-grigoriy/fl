@@ -1,0 +1,29 @@
+<div class="col-md-6"></div>
+<div class="col-md-6 recover">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h4>Recover password</h4>
+      <div class="bb mb"></div>
+      <form class="login-form" role="form" novalidate="novalidate">
+        <div class="form-group">
+          <label for="recoverEmail">Email</label>
+          <input type="email" class="form-control" id="recoverEmail" placeholder="Enter Email" required="">
+          <div class="helper">| <a href="/login" class="show-signIn">Sing In</a></div>
+        </div>
+
+        <div class="form-group">
+          <label for="recoverEmail">Code</label>
+          <input type="password" class="form-control" id="recoverEmail" placeholder="Enter Code" required="">
+
+          <div class="helper">| <a href="javascript:;" class="show-signIn" data-placement="bottom"  data-toggle="tooltip" title="Check your mailbox for our mail with this code">WTF?</a></div>
+        </div>
+
+        <div class="error server text-center mv hidden">Oops! Some error occurred! Try again later</div>
+        <div class="error auth text-center mv hidden">Email or code invalid</div>
+
+        <button type="button" class="btn btn-primary">recover</button>
+        <div class="loader hidden mt"></div>
+      </form>
+    </div>
+  </div>
+</div>

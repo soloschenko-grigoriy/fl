@@ -1,0 +1,31 @@
+<div class="panel-body pn">
+  <div class="mb">
+    <img class="img-responsive" src="/uploads/large/{{ photo.url }}" alt="Image">
+  </div>
+  <div class="mv pt">
+    <h4>{{ name }}</h4>
+    <small>
+      By <a href="">{{ author.name }}</a> | {{#getDateTime created }}{{r}}{{/getDateTime}} | {{ commentsCount }} comments
+      <br/>
+      Tags: <span class="tags">
+        <!-- insert tags here  -->
+      </span>
+    </small>
+  </div>
+  <div class="mtx2">{{{ description }}}</div>
+
+
+</div>
+
+<!-- <hr> -->
+<div class="panel-footer">
+  <div class="pull-left mr"><i class="fa fa-clock-o" style="font-size: 16px;margin-right: 5px;"></i> {{#getDateTime created }}{{r}}{{/getDateTime}}</div>
+  <div class="pull-left mh"><i class="fa fa-eye" style="font-size: 20px;margin-right: 5px;"></i> Views: {{ viewsCount }} </div>
+  <div class="pull-left mh"><i class="fa fa-child" style="font-size: 20px;margin-right: 5px;"></i> Votes: {{ votesCount }}</div>
+  <div class="pull-left ml"><i class="fa fa-commenting-o" style="font-size: 20px;margin-right: 5px;"></i> Comments: {{ commentsCount }}</div>
+
+  <div class="pull-right">
+    <a href="" class="">TRUTH <i class="fa fa-check" style="font-size: 16px;margin-right: 5px;"></i></a> &nbsp;&nbsp;
+    <a href="" class="">LYING <i class="fa fa-times" style="font-size: 16px;margin-right: 5px;"></i></a>
+  </div>
+</div>

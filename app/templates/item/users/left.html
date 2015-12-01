@@ -1,0 +1,40 @@
+<div class="widget-header">
+  <img src="/assets/img/bg/4.jpg" class="img-responsive" alt="Profile Picture">
+</div>
+  <div class="widget-body text-center">
+    <div class="user-frame" style="margin: 0 auto">
+      <img src="/assets/img/faces/1.jpg" class="img-circle img-md" alt="Profile Picture">
+    </div>
+    <h4 class="mar-no">
+      <a href="/profile/{{ id }}" class="">{{ name }}</a></h4>
+    <p class="mb">
+      {{ moto }}
+    </p>
+
+    <div class="pv">
+      <button class="btn btn-primary follow">Follow</button>
+      <button class="btn btn-primary unfollow hidden">UnFollow</button>
+      <button class="btn btn-primary new-message">Message</button>
+      <div class="loader hidden"></div>
+    </div>
+
+    <hr />
+    <div class="mt ph">
+      <h5>About me</h5>
+      <p>{{ about }}</p>
+    </div>
+
+    <hr />
+    <div class="mv">
+      <div class="row mn">
+        <div class="col-md-6">
+          <h5>Followers</h5>
+          <p class="folowers-count">0</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Posts</h5>
+          <p class="posts-count">0</p>
+        </div>
+      </div>
+    </div>
+  </div>

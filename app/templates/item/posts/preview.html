@@ -1,0 +1,11 @@
+<div class="panel-body">
+  <div class="panel-img">
+    <img src="/uploads/large/{{ photo.url }}" alt="" class="img-responsive"/>
+  </div>
+  <div class="panel-content pt">
+    <h4>{{ name }}</h4>
+    <small>By <a href="/profile/{{ author.id }}">{{author.name }}</a> | {{#getDateTime created ''}}{{r}}{{/getDateTime}} | {{ commentsCount }} comments</small>
+    <div class="mv">{{#truncate description 300}}{{r}}{{/truncate}}</div>
+    <i class="fa fa-angle-double-right"></i> <a href="/posts/{{ id }}" class="">Read more</a>
+  </div>
+</div>

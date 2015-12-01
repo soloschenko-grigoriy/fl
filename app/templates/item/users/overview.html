@@ -1,0 +1,32 @@
+<h4>{{ name }}</h4>
+<a href="#" class="btn-link">@stephen_doe</a>
+<p class="text-muted mar-btm">{{ moto }}</p>
+
+<p>{{ about }}</p>
+
+<div class="row mtx2">
+  <div class="col-md-6">
+    <h5 class="bb pb">Information</h5>
+    <table>
+      <tbody>
+        <tr>
+          <td class="pr">Gender:</td>
+          <td class="pl">{{#ifCond gender 'm'}}Male{{ else }}Female{{/ifCond}}</td>
+        </tr>
+        <tr>
+          <td class="pr">Job:</td>
+          <td class="pl">{{ job }}</td>
+        </tr>
+        <tr>
+          <td class="pr">Date of birth:</td>
+          <td class="pl">{{#getMonthName birthMonth}}{{r}}{{/getMonthName}} {{ birthDay }}, {{ birthYear }}</td>
+        </tr>
+        <tr>
+          <td class="pr">Relations:</td>
+          <td class="pl">Single</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6"></div>
+</div>

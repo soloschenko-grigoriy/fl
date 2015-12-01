@@ -1,0 +1,761 @@
+$font-family: "Roboto", sans-serif;
+
+$font-weight: 300;
+$font-weight-thin: 100;
+$font-weight-bold: 500;
+
+$font-size: 14px;
+
+$margin: 10px;
+$padding: 10px;
+
+// Colors
+$color-main: #313447;
+$color-main-darker: #464962;
+$color-white: #fff;
+$color-grey: #999;
+$color-grey-2: #424141;
+$color-heads: #555;
+$color-bg: #EEEEEE;
+
+$color-warning: #ffad10;
+$color-warning-hover: darken(#ffad10, 5%);
+
+$color-bg-blue: #e7ebee;
+$color-bg-blue-hover: darken(#e7ebee, 5%);
+
+$color-error: #ff6f69;
+$color-error-hover: darken(#ff6f69, 5%);
+
+$color-success: #8cc152;
+$color-success-hover: darken(#8cc152, 5%);
+
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  margin: 0;
+  padding: 0;
+  background-color:$color-bg;
+  -webkit-font-smoothing: antialiased;
+}
+h4, h3, h2, h1 {
+  font-weight: 300;
+  color: $color-heads;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  color: $color-grey;
+}
+
+a.underlined {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+dl, ol, ul {
+  margin-top: 0;
+}
+ol, ul {
+  margin-bottom: 9px;
+}
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 18px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 0;
+
+  li {
+    display: inline-block;
+  }
+
+  li a {
+    color: $color-error;
+    font-weight:300;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  li.active a{
+    color: $color-heads;
+  }
+}
+
+.bg-danger, .bg-danger a,
+.bg-success, .bg-success a,
+.bg-danger, .bg-danger a {
+  color: $color-white;
+}
+.bg-success{
+  background-color: $color-success;
+}
+.bg-warning{
+  background-color: $color-warning;
+}
+.bg-danger {
+  background-color: $color-error;
+}
+.bg-blue{
+  background-color:$color-bg-blue;
+}
+.bg-grey{
+  background-color:$color-grey;
+}
+.bg-white{
+  background-color:$color-white;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.clear {
+  clear: both;
+}
+
+.error {
+  color: $color-error;
+  font-size: 12px;
+}
+
+ul.list{
+    padding-left: 5px;
+    display: block;
+    margin-left: -5px;
+  li {
+    float: left;
+    padding: 0px 5px;
+    border-right: 1px solid $color-grey;
+    line-height: normal;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  li:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+.mt {
+  margin-top: $margin;
+}
+
+.mb {
+  margin-bottom: $margin;
+}
+
+.ml {
+  margin-left: $margin;
+}
+
+.mr {
+  margin-right: $margin;
+}
+
+.ma {
+  margin: $margin;
+}
+
+.mn {
+  margin: 0 !important;
+}
+
+.mh {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+.mv {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+.pt {
+  padding-top: $padding;
+}
+
+.pb {
+  padding-bottom: $padding;
+}
+
+.pl {
+  padding-left: $padding;
+}
+
+.pr {
+  padding-right: $padding;
+}
+
+.pa {
+  padding: $padding;
+}
+
+.pn {
+  padding: 0 !important;
+}
+
+.ph {
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+.pv {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+.bt {
+  border-top: 1px solid $color-main;
+}
+
+.bb {
+  border-bottom: 1px solid $color-main;
+}
+
+.bl {
+  border-left: 1px solid $color-main;
+}
+
+.br {
+  border-right: 1px solid $color-main;
+}
+
+.ba {
+  border: 1px solid $color-main;
+}
+
+.bh {
+  border-top: 1px solid $color-main;
+  border-bottom: 1px solid $color-main;
+}
+.bn{
+  border: none !important;
+}
+.bv {
+  border-left: 1px solid $color-main;
+  border-right: 1px solid $color-main;
+}
+
+.bw{
+  border-color:$color-white !important;
+}
+.bg{
+  border-color:$color-grey !important;
+}
+.b-bl{
+  border-color:$color-bg-blue !important;
+}
+
+.mtx2 {
+  margin-top: 20px;
+}
+
+.mbx2 {
+  margin-bottom: 20px;
+}
+
+.mlx2 {
+  margin-left: 20px;
+}
+
+.mrx2 {
+  margin-right: 20px;
+}
+
+.mvx2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mhx2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mtx3 {
+  margin-top: 30px;
+}
+
+.mbx3 {
+  margin-bottom: 30px;
+}
+
+.mlx3 {
+  margin-left: 30px;
+}
+
+.mrx3 {
+  margin-right: 30px;
+}
+
+.mvx3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mhx3 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.img-sm {
+  width: 46px;
+  height: 46px;
+}
+
+.img-md {
+  width: 94px;
+  height: 94px;
+}
+
+.img-xs {
+  width: 32px;
+  height: 32px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  border-radius: 4px;
+  width: 100%;
+  background-color: transparent;
+  padding: 8px 12px 6px;
+  font-size: $font-size;
+  line-height: 1.5;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  color: $color-main;
+  border: 1px solid $color-main;
+}
+
+.form-control:focus {
+  border-color: $color-main;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.075), 0 0 0 1px $color-main;
+  -moz-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.075), 0 0 0 1px $color-main;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.075), 0 0 0 1px $color-main;
+}
+
+.form-group.has-error .form-control {
+  border-color: $color-error !important;
+  color: $color-error !important;
+}
+
+.form-group.has-error .form-control::-webkit-input-placeholder {
+  color: $color-error !important;
+}
+
+.form-group.has-error .form-control::-moz-placeholder {
+  color: $color-error !important;
+}
+
+.form-group.has-error .form-control:-moz-placeholder {
+  color: $color-error !important;
+}
+
+.form-group.has-error .form-control:-ms-input-placeholder {
+  color: $color-error !important;
+}
+
+.form-group.has-success .form-control {
+  border-color: $color-success !important;
+  color: $color-success !important;
+}
+
+.form-group.has-success .form-control::-webkit-input-placeholder {
+  color: $color-success !important;
+}
+
+.form-group.has-success .form-control::-moz-placeholder {
+  color: $color-success !important;
+}
+
+.form-group.has-success .form-control:-moz-placeholder {
+  color: $color-success !important;
+}
+
+.form-group.has-success .form-control:-ms-input-placeholder {
+  color: $color-success !important;
+}
+
+.form-group.has-warning .form-control {
+  border-color: $color-warning !important;
+  color: $color-warning !important;
+}
+
+.form-group.has-warning .form-control::-webkit-input-placeholder {
+  color: $color-warning !important;
+}
+
+.form-group.has-warning .form-control::-moz-placeholder {
+  color: $color-warning !important;
+}
+
+.form-group.has-warning .form-control:-moz-placeholder {
+  color: $color-warning !important;
+}
+
+.form-group.has-warning .form-control:-ms-input-placeholder {
+  color: $color-warning !important;
+}
+
+label {
+  font-weight: $font-weight;
+}
+
+.btn {
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+
+  webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.btn-primary{
+  color: $color-white;
+  background-color: $color-main;
+  border: 0;
+}
+.btn-primary:hover{
+  color: $color-white;
+  background-color: $color-main-darker;
+}
+.btn-success {
+  background-color: $color-success;
+  border-color: $color-success;
+  color: $color-white !important;
+}
+.btn-success:hover {
+  background-color: $color-success-hover;
+  border-color: $color-success-hover;
+}
+.btn-warning {
+  background-color: $color-warning;
+  border-color: $color-warning;
+  color: $color-white !important;
+}
+.btn-warning:hover {
+  background-color: $color-warning-hover;
+  border-color: $color-warning-hover;
+}
+.btn-error {
+  background-color: $color-error;
+  border-color: $color-error;
+  color: $color-white;
+}
+.btn-error:hover {
+  background-color: $color-error-hover;
+  border-color: $color-error-hover;
+  color: $color-white;
+}
+.btn.btn-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.container-fluid{
+  padding:0;
+}
+
+.vt{
+  vertical-align: top;
+}
+.vm{
+  vertical-align: middle;
+}
+.vb{
+  vertical-align: bottom;
+}
+
+/*=============================================
+=                    PANEL                    =
+=============================================*/
+.panel {
+  box-shadow: 0 1px 3px -1px rgba(22,24,27,.26);
+  border-radius: 0px;
+
+  .panel-head{
+    height: 40px;
+  }
+  .panel-head h4{
+    height: 40px;
+    line-height: 40px;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+  .embed-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+    filter: alpha(opacity=60);
+  }
+  .embed-extend-item {
+    position: relative;
+    padding: 0 15px 5px;
+  }
+  [class*=bg-grd-] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  // .bg-grd-dark, .bg-grd-inverse {
+  //   background: linear-gradient(45deg,#0a0213 0,rgba(10,2,19,0) 70%),linear-gradient(135deg,#07252c 10%,rgba(7,37,44,0) 80%),linear-gradient(225deg,#031b49 10%,rgba(3,27,73,0) 80%),linear-gradient(315deg,#100462 100%,rgba(16,4,98,0) 70%);
+  // }
+  .avatar{
+    margin-top: -48px;
+    margin-right: 10px;
+    border: 2px solid $color-white;
+    border-radius: 96px;
+  }
+  .avatar>img {
+    width: 96px;
+    height: auto;
+    border-radius: 48px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+  }
+  h3 a{
+    color: $color-main;
+  }
+
+  .embed-extend-item small {
+    display: block;
+    color: rgba(22,24,27,.54);
+  }
+
+  .embed-extend-item:after {
+    clear: both;
+  }
+  .embed-extend-item:after,
+  .embed-extend-item:before {
+    content: " ";
+    display: table;
+  }
+  .panel-footer{
+    background-color: $color-white;
+
+    textarea{
+      border:none;
+      background:$color-bg;
+    }
+  }
+}
+
+/*=============================================
+=                   RIBBON                    =
+=============================================*/
+.ribbon {
+  z-index: 24;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 300;
+  position: relative;
+  margin: 0 -10px 0 -10px;
+  z-index: 20;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  line-height: 38px;
+
+  span{
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    background-color: $color-error;
+    color: $color-white;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &:after {
+    top: 100%;
+    left: 0px;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #333;
+  }
+}
+
+/*=============================================
+=                    TAGS                     =
+=============================================*/
+.tags {
+  a{
+    display: inline-block;
+    color:$color-heads;
+    padding:5px 10px;
+    margin-bottom: 10px;
+    border-radius:2px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+}
+
+/*=============================================
+=                PROGRESS BAR                 =
+=============================================*/
+.progress {
+  border-radius: 0px;
+  height: 22px;
+  margin-bottom: 0;
+  box-shadow:none;
+
+  .progress-bar{
+    line-height: 22px;
+    box-shadow:none;
+  }
+
+  .progress-bar.progress-bar-success {
+    background-color: $color-success;
+  }
+  .progress-bar.progress-bar-error {
+    background-color: $color-error;
+  }
+}
+
+/*=============================================
+=                  BADGES                     =
+=============================================*/
+.badge{
+  display: inline-block;
+  text-align: center;
+  padding:0;
+  font-weight: 300;
+}
+.badge.badge-danger{
+  background-color:$color-error;
+}
+.badge.badge-circle{
+  border-radius:50px;
+  width:20px;
+  height: 20px;
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+.tooltip {
+  min-width: 100px;
+}
+
+/*=============================================
+=               NOTIFICATIONS                 =
+=============================================*/
+ul.notifications{
+  width: auto;
+  min-width: 300px;
+}
+li.notification {
+  border-radius:0;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+  &.success {
+    background-color: rgba($color-success, 0.8);
+  }
+}
+
+/*=============================================
+=                    MISC                     =
+=============================================*/
+.tooltip-inner {
+  background: $color-white;
+  color: $color-main;
+  border: 1px solid $color-main;
+  border-radius: 0;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: $color-main;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: $color-main;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: $color-main;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: $color-main;
+}
+
+.login-button i{
+  font-size: 30px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  margin-top: -30px;
+  margin-right: 30px;
+
+}
+.main-layout{
+  transition: all .35s ease;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+}
+
+.online{
+  color:$color-grey !important;
+}
+.bg-danger .online{
+  color:$color-white !important;
+}
+@import "_loader";
+@import "_header";
+@import "_page";
+@import "_post";
+@import "_sidebar";
+@import "_modal";
+@import "_timeline";
+@import "_messages";
+@import "_login";

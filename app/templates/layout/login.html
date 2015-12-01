@@ -1,0 +1,100 @@
+<div class="col-md-6 logo-container">
+  <img src="/assets/img/logo.png" alt="" class="img-responsive" />
+</div>
+<div class="col-md-6 sign-in">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h4>Sign in</h4>
+      <div class="bb mb"></div>
+      <form class="login-form" role="form" novalidate="novalidate" onsubmit="return false">
+        <div class="form-group">
+          <label for="signInEmail">Email</label>
+          <input type="email" class="form-control" id="signInEmail" placeholder="Enter Email" required="">
+          <div class="helper">| <a href="javascript:;" class="show-signUp">Sing Up</a></div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter Password" required="">
+          <div class="helper">| <a href="javascript:;" class="show-recover">Recover</a></div>
+        </div>
+
+        <div class="error server text-center mv hidden">Oops! Some error occurred! Try again later</div>
+        <div class="error auth text-center mv hidden">Email or password invalid</div>
+        <div class="error fb text-center mv hidden">Please allow us get your email</div>
+
+        <button type="button" class="btn btn-primary full-width">Login</button>
+        <div class="loader hidden"></div>
+
+        <div class="row via-social mn">
+          <div class="col-md-12 text-center mv">- or -</div>
+
+          <div class="col-md-6 facebook">
+            <button type="button" class="btn btn-primary full-width">facebook</button>
+          </div>
+          <div class="col-md-6 google">
+            <button type="button" class="btn btn-primary full-width">google</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 sign-up hidden">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h4>Sign up</h4>
+      <div class="bb mb"></div>
+      <form class="login-form" role="form" novalidate="novalidate" onsubmit="return false">
+        <div class="form-group">
+          <label for="password">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter Username" required="">
+          <div class="helper">| <a href="javascript:;" class="show-signIn">Sing in</a></div>
+        </div>
+        <div class="form-group">
+          <label for="signUpEmail">Email</label>
+          <input type="email" class="form-control" id="signUpEmail" placeholder="Enter Email" required="">
+          <div class="helper">| <a href="javascript:;" data-placement="bottom" data-toggle="tooltip" title="Without email you can't authorise. Don't worry - other users will not see it">WHY?</a></div>
+        </div>
+
+        <div class="error server text-center mv hidden">Oops! Some error occurred! Try again later</div>
+        <div class="error auth text-center mv hidden">Email or name invalid</div>
+        <div class="error fb text-center mv hidden">Please allow us get your email</div>
+
+        <button type="button" class="btn btn-primary full-width">Sing up</button>
+        <div class="loader hidden"></div>
+
+        <div class="row via-social mn">
+          <div class="col-md-12 text-center mv">- or -</div>
+          <div class="col-md-6 facebook">
+            <button type="button" class="btn btn-primary full-width">facebook</button>
+          </div>
+          <div class="col-md-6 google">
+            <button type="button" class="btn btn-primary full-width">google</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 recover hidden">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h4>Recover password</h4>
+      <div class="bb mb"></div>
+      <form class="login-form" role="form" novalidate="novalidate" onsubmit="return false">
+        <div class="form-group">
+          <label for="recoverEmail">Email</label>
+          <input type="email" class="form-control" id="recoverEmail" placeholder="Enter Email" required="">
+          <div class="helper">| <a href="javascript:;" class="show-signIn">Sing In</a></div>
+        </div>
+
+        <div class="error server text-center mv hidden">Oops! Some error occurred! Try again later</div>
+        <div class="error auth text-center mv hidden">Email is invalid</div>
+
+
+        <button type="button" class="btn btn-primary full-width">recover</button>
+        <div class="loader hidden"></div>
+      </form>
+    </div>
+  </div>
+</div>

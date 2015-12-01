@@ -1,0 +1,14 @@
+<div class="media-left">
+  <div class="user-frame sm">
+    <img src="/assets/img/av1.png" class="img-circle img-sm" alt="Profile Picture">
+  </div>
+</div>
+<div class="media-body">
+  <h5 class="media-heading"><a href="/profile/{{ id }}">{{ author.name }}</a></h5>
+  <div class="info pb">
+    <a href="/profile/{{ id }}" class="btn-link">@stephen_doe</a> {{#getDateTime created }}{{r}}{{/getDateTime}}
+  </div>
+  <p>{{{ description }}}</p>
+
+  <hr>
+</div>

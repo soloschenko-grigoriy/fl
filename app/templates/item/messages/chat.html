@@ -1,0 +1,17 @@
+<div class="media-left">
+  <img src="/assets/img/faces/2.jpg" class="img-circle img-sm" alt="Profile Picture">
+</div>
+<div class="media-body">
+  <h5 class="media-heading">
+    <a href="/profile/{{#getConversationUser this 'id'}}{{r}}{{/getConversationUser}}">
+      {{#getConversationUser this 'name'}}{{ r }}{{/getConversationUser}}
+    </a>
+  </h5>
+
+  <p>{{#truncate message.description 50 }}{{r}}{{/truncate}}</p>
+</div>
+<div class="media-right pr text-center">
+  {{#getDateTime message.created 'date'}}{{r}}{{/getDateTime}}
+  <div class="not-readed">5</div>
+  <!--<a href="" class="delete">DELETE</a>-->
+</div>

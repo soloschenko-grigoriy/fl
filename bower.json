@@ -1,0 +1,30 @@
+{
+  "name": "mar",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "requirejs": "latest",
+    "requirejs-text": "latest",
+    "backbone": "latest",
+    "underscore": "latest",
+    "backbone.marionette": "latest",
+    "backbone.wreqr": "^1.0.0",
+    "backbone.babysitter": "^0.1.0",
+    "require-handlebars-plugin": "latest",
+    "backbone-relational": "latest",
+    "mocha": "latest",
+    "chai": "~1.7.2",
+    "sinon": "~1.7.3",
+    "bootstrap-select": "latest",
+    "remarkable-bootstrap-notify":"latest",
+    "moment": "latest",
+    "summernote": "0.6.10",
+    "chosen": "1.4.2",
+    "socket.io-client":"latest",
+    "nanoscroller":"latest",
+    "components-font-awesome":"4.4.0"
+  },
+  "devDependencies": {},
+  "directory": "bower_components"
+}

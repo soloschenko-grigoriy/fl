@@ -1,0 +1,40 @@
+/**
+ * @class     Votes collection
+ *
+ * @author    Soloschenko G. soloschenko@gmail.com
+ *
+ */
+define(['backbone', 'models/vote'], function (Backbone, Model){
+
+  'use strict';
+
+  return Backbone.Collection.extend({
+
+    /**
+     * Simply override costructor for best debuging
+     *
+     * @chainable
+     *
+     * @return {Backbone.Model}
+     */
+    constructor: function Votes()
+    {
+
+      return Backbone.Collection.prototype.constructor.apply(this, arguments);
+    },
+
+    /**
+     * Model object type
+     *
+     * @type {Backbone.Model}
+     */
+    model: Model,
+
+    /**
+     * Url for sync with server
+     *
+     * @returns {String}
+     */
+    url: '/api/votes'
+  });
+});

@@ -1,0 +1,92 @@
+<div class="form-group user-name">
+  <input id="inputName" type="text" class="form-control" placeholder="Enter Name" value="{{ name }}">
+</div>
+<div class="form-group user-moto">
+  <input id="inputMoto" type="text" class="form-control" placeholder="Enter Moto" value="{{ moto }}">
+</div>
+<div class="form-group user-about">
+  <textarea name="inputAbout" id="inputAbout" class="form-control" rows="3" placeholder="Tell people about you">{{ about }}</textarea>
+</div>
+
+<div class="form-group user-job">
+  <input id="inputJob" type="text" class="form-control" placeholder="Enter job" value="{{ job }}">
+</div>
+
+<div class="form-group user-gender">
+  <select>
+    <option value="m" {{#ifCond gender 'm'}}selected{{/ifCond}}>Male</option>
+    <option value="f" {{#ifCond gender 'f'}}selected{{/ifCond}}>Female</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <div class="row mn">
+    <div class="col-md-2 pn user-birth-day">
+      <select>
+        <option value="1" {{#ifCond birthDay 1}}selected{{/ifCond}}>1</option>
+        <option value="2" {{#ifCond birthDay 2}}selected{{/ifCond}}>2</option>
+        <option value="3" {{#ifCond birthDay 3}}selected{{/ifCond}}>3</option>
+        <option value="4" {{#ifCond birthDay 4}}selected{{/ifCond}}>4</option>
+        <option value="5" {{#ifCond birthDay 5}}selected{{/ifCond}}>5</option>
+        <option value="6" {{#ifCond birthDay 6}}selected{{/ifCond}}>6</option>
+        <option value="7" {{#ifCond birthDay 7}}selected{{/ifCond}}>7</option>
+        <option value="8" {{#ifCond birthDay 8}}selected{{/ifCond}}>8</option>
+        <option value="9" {{#ifCond birthDay 9}}selected{{/ifCond}}>9</option>
+        <option value="10" {{#ifCond birthDay 10}}selected{{/ifCond}}>10</option>
+        <option value="11" {{#ifCond birthDay 11}}selected{{/ifCond}}>11</option>
+        <option value="12" {{#ifCond birthDay 12}}selected{{/ifCond}}>12</option>
+        <option value="13" {{#ifCond birthDay 13}}selected{{/ifCond}}>13</option>
+        <option value="14" {{#ifCond birthDay 14}}selected{{/ifCond}}>14</option>
+        <option value="15" {{#ifCond birthDay 15}}selected{{/ifCond}}>15</option>
+        <option value="16" {{#ifCond birthDay 16}}selected{{/ifCond}}>16</option>
+        <option value="17" {{#ifCond birthDay 17}}selected{{/ifCond}}>17</option>
+        <option value="18" {{#ifCond birthDay 18}}selected{{/ifCond}}>18</option>
+        <option value="19" {{#ifCond birthDay 19}}selected{{/ifCond}}>19</option>
+        <option value="20" {{#ifCond birthDay 20}}selected{{/ifCond}}>20</option>
+        <option value="21" {{#ifCond birthDay 21}}selected{{/ifCond}}>21</option>
+        <option value="22" {{#ifCond birthDay 22}}selected{{/ifCond}}>22</option>
+        <option value="23" {{#ifCond birthDay 23}}selected{{/ifCond}}>23</option>
+        <option value="24" {{#ifCond birthDay 24}}selected{{/ifCond}}>24</option>
+        <option value="25" {{#ifCond birthDay 25}}selected{{/ifCond}}>25</option>
+        <option value="26" {{#ifCond birthDay 26}}selected{{/ifCond}}>26</option>
+        <option value="27" {{#ifCond birthDay 27}}selected{{/ifCond}}>27</option>
+        <option value="28" {{#ifCond birthDay 28}}selected{{/ifCond}}>28</option>
+        <option value="29" {{#ifCond birthDay 29}}selected{{/ifCond}}>29</option>
+        <option value="30" {{#ifCond birthDay 30}}selected{{/ifCond}}>30</option>
+        <option value="31" {{#ifCond birthDay 31}}selected{{/ifCond}}>31</option>
+      </select>
+    </div>
+    <div class="col-md-6 ph user-birth-month">
+      <select>
+        <option value="1" {{#ifCond birthMonth 1}}selected{{/ifCond}}>January</option>
+        <option value="2" {{#ifCond birthMonth 2}}selected{{/ifCond}}>February</option>
+        <option value="3" {{#ifCond birthMonth 3}}selected{{/ifCond}}>March</option>
+        <option value="4" {{#ifCond birthMonth 4}}selected{{/ifCond}}>April</option>
+        <option value="5" {{#ifCond birthMonth 5}}selected{{/ifCond}}>May</option>
+        <option value="6" {{#ifCond birthMonth 6}}selected{{/ifCond}}>June</option>
+        <option value="7" {{#ifCond birthMonth 7}}selected{{/ifCond}}>July</option>
+        <option value="8" {{#ifCond birthMonth 8}}selected{{/ifCond}}>Augest</option>
+        <option value="9" {{#ifCond birthMonth 9}}selected{{/ifCond}}>September</option>
+        <option value="10" {{#ifCond birthMonth 10}}selected{{/ifCond}}>October</option>
+        <option value="11" {{#ifCond birthMonth 11}}selected{{/ifCond}}>November</option>
+        <option value="12" {{#ifCond birthMonth 12}}selected{{/ifCond}}>December</option>
+      </select>
+    </div>
+    <div class="col-md-4 pn user-birth-year">
+      <select>
+        <option value="1997" {{#ifCond birthYear 1997}}selected{{/ifCond}}>1997</option>
+        <option value="1996" {{#ifCond birthYear 1996}}selected{{/ifCond}}>1996</option>
+        <option value="1995" {{#ifCond birthYear 1995}}selected{{/ifCond}}>1995</option>
+        <option value="1994" {{#ifCond birthYear 1994}}selected{{/ifCond}}>1994</option>
+        <option value="1993" {{#ifCond birthYear 1993}}selected{{/ifCond}}>1993</option>
+        <option value="1992" {{#ifCond birthYear 1992}}selected{{/ifCond}}>1992</option>
+        <option value="1991" {{#ifCond birthYear 1991}}selected{{/ifCond}}>1991</option>
+        <option value="1989" {{#ifCond birthYear 1989}}selected{{/ifCond}}>1989</option>
+        <option value="1988" {{#ifCond birthYear 1988}}selected{{/ifCond}}>1988</option>
+        <option value="1987" {{#ifCond birthYear 1987}}selected{{/ifCond}}>1987</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="loader hidden"></div>
+<button type="button" class="btn btn-primary full-width">Save</button>

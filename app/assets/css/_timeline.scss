@@ -1,0 +1,145 @@
+/*=============================================
+=                  TIMELINE                   =
+=============================================*/
+.timeline {
+  position: relative;
+  background-color: transparent;
+  padding: 0 20px;
+}
+
+.timeline:before {
+  left: 69px;
+  top: 20px;
+  width: 2px;
+}
+
+.timeline:before, .timeline:after {
+  background-color: $color-bg;
+  bottom: 20px;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.timeline .timeline-header:first-child {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.timeline-header {
+  border-radius: 0;
+  clear: both;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.timeline-header .timeline-header-title {
+  display: inline-block;
+  text-align: center;
+  padding: 7px 15px;
+  min-width: 100px;
+  background-color: $color-error;
+  color: $color-white;
+  font-size: 18px;
+}
+
+.timeline-entry {
+  margin-bottom: 50px;
+  margin-top: 5px;
+  position: relative;
+  clear: both;
+}
+
+.timeline-stat {
+  width: 100px;
+  float: left;
+  text-align: center;
+  padding-bottom: 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+.timeline-label {
+  border-radius: 0;
+  margin-left: 99px;
+  position: relative;
+  min-height: 100px;
+  box-shadow: none;
+  background-color: $color-white;
+  box-shadow: 0 1px 7px -1px rgba(22,24,27,.26);
+}
+
+.timeline-label:after {
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 9px solid #fff;
+  margin: 0 0 0 -9px;
+  border-right-color: $color-white;
+  bottom: 78px;
+}
+.timeline-label:before {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid lighten($color-grey,30%);
+  margin: 0 0 0 -10px;
+  bottom: 77px;
+}
+.timeline-label:before,
+.timeline-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+}
+
+.timeline-icon {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  width: 46px;
+  box-shadow: 0 0 0 7px $color-white;
+}
+
+.timeline-icon img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.timeline-icon:empty {
+  height: 10px;
+  width: 10px;
+  margin-top: 20px;
+  background-color: $color-main;
+}
+
+.timeline-icon i {
+  font-size: 30px;
+  margin-top: -6px;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.timeline-icon i.icon-comment{
+  margin-top: 1px;
+  margin-left: 0px;
+}
+.timeline-time {
+  display: inline-block;
+  padding: 5px 3px 7px;
+  margin-top: 3px;
+  color: $color-grey;
+  font-size: .85em;
+  max-width: 70px;
+  background-color: $color-white;
+}
+.panel .timeline-icon {
+
+}
