@@ -4,27 +4,24 @@ FaceLess v0.0.1
 
 INSTALL:
 --------------
-- Install ImageMagick (MacOS: brew install imagemagick)
+- brew install imagemagick
+- brew install mongodb
+- brew install phantomjs
+- npm install -g yo grunt-cli bower
+- npm install -g mocha-phantomjs
+- npm install (-g) generator-mocha-amd
+- npm install (-g) generator-marionette
 - npm install
-- npm install -g grunt-cli
-- npm install -g nodemon
-- grunt prepare
+- bower install
 - copy and edit config.js
 
 START (on dev):
 --------------
-- screen mongod
-- nodemon start.js
+- grunt
 
 TEST:
 --------------
-- Server: grunt test:server
-- Client: grunt test:client
-- Both:   grunt test
-
-GENERATE NEW REST MODULE:
---------------
-- node gen %_MODULE_NAME_%
+- grunt test
 
 BUILD:
 --------------
