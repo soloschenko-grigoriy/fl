@@ -89,38 +89,8 @@ define([
     start: function()
     {
       Communicator.mediator.on('ROUTER:navigate', this.navigate, this);
-      console.log(111);
-      // Auth.authentificate(_.bind(this.authError, this), _.bind(this.authSuccess, this));
 
-      return this;
-    },
-
-    /**
-     * Auth error occured
-     *
-     * @return {Backbone.Router}
-     */
-    authSuccess: function()
-    {
       Backbone.history.start({pushState: true});
-
-      return this;
-    },
-
-    /**
-     * Auth error occured
-     *
-     * @return {Backbone.Router}
-     */
-    authError: function()
-    {
-      Backbone.history.start({pushState: true});
-
-      if(Backbone.history.getFragment() === 'recover'){
-        return this;
-      }
-
-      Communicator.mediator.trigger('ROUTER:navigate', 'login', {trigger: true});
 
       return this;
     },
@@ -132,17 +102,10 @@ define([
      */
     breforeEach: function()
     {
-      if(!Auth.is()){ // allways chech if user is authed
-        Communicator.mediator.trigger('ROUTER:navigate', 'login', {trigger: true});
-
-        return false;
-      }
-
       if(!this.layout){
         this.layout = new Layout();
 
         Communicator.reqres.request('RM:getRegion', 'body').show(this.layout);
-
       }
 
       return true;
