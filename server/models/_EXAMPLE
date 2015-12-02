@@ -24,24 +24,6 @@ Model.prototype.constructor = Model;
  */
 Model.prototype = Object.create(Parent.prototype);
 
-/**
- * Create model
- *
- * @param  {Object}   options
- * @param  {Function} cb
- *
- * @return {Model}
- */
-Model.prototype.create = function(params)
-{
-  params.data.created = Math.floor(new Date().getTime() / 1000);
-  params.data.deleted = false;
-
-  return Parent.prototype.create.call(this, params);
-};
-
-module.exports = new Model('tag', {
-  name: String,
-  created: Number,
-  deleted: Boolean
+module.exports = new Model('%_MODEL_NAME_%', {
+  name: String
 });

@@ -1,3 +1,268 @@
-<nav class="navbar navbar-inverse mn"></nav>
+<header>
+  <nav class="navbar navbar-inverse mn">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="javascript:;"><i class="icon-plus"></i></a></li>
+
+          <li><a href="/">Posts</a></li>
+          <li><a href="/people">People</a></li>
+          <li><a href="/messages">Messages (4)</a></li>
+          <!-- <li><a href="community.html">Community</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right mr">
+          {{#if currentUser }}
+            <li>
+              <a href="profile.html">
+                <img src="/assets/img/faces/3.jpg" alt="" class="img-circle img-xs ba bw" />
+                <span>{{ person.name }}</span>
+              </a>
+            </li>
+            <li><a href=""><i class="icon icon-config"></i></a></li>
+          {{else}}
+          <li>
+            <a href="" class="login-button">
+              <i class="icon-user"></i>
+              <span>Sign in</span>
+            </a>
+          </li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<nav class="sidebar">
+  <div class="user-info">
+    <img src="/assets/img/faces/3.jpg" class="img-circle img-md mb" />
+    <h4 class="mn">{{ person.name }}</h4>
+    <p>{{#if person.occupation }} {{ person.occupation }} {{ else }} - {{/if}}</p>
+  </div>
+
+  <div class="tab-navigation">
+    <ul role="tablist" class="nav nav-tabs">
+      <li role="presentation" class="notifications">
+        <a href="#tab1" aria-controls="notifications" role="tab" data-toggle="tab" aria-expanded="true">
+          <i class="icon-info"></i>
+        </a>
+      </li>
+      <li role="presentation" class="chat">
+        <a href="#tab2" aria-controls="chat" role="tab" data-toggle="tab" aria-expanded="false">
+          <i class="icon-chat"></i>
+        </a>
+      </li>
+      <li role="presentation" class="personalities">
+        <a href="#tab3" aria-controls="personalities" role="tab" data-toggle="tab" aria-expanded="false">
+          <i class="icon-users"></i>
+        </a>
+      </li>
+      <li role="presentation" class="settings">
+        <a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false">
+          <i class="icon-edit"></i>
+        </a>
+      </li>
+      <li role="presentation" class="support active">
+        <a href="#tab5" aria-controls="support" role="tab" data-toggle="tab" aria-expanded="false">
+          <i class="icon-help2"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="tab-panel">
+    <div class="tab-content">
+      <div id="tab1" role="tabpanel" class="tab-pane notifications ">
+        <div class="nano">
+          <div class="nano-content ph">
+            <h4 class="pb mh bb bg">Notifications</h4>
+            <ul>
+              <li class="">
+                <div class="media pt">
+                  <div class="media-left"><i class="icon-sun"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Happy Day</h5>
+                    <p>Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.</p>
+                  </div>
+                  <div class="media-right vm">
+                    <i class="icon-angle-right"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <div class="media pt">
+                  <div class="media-left"><i class="icon-gift"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Congratulations Developers</h5>
+                    <p>Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.</p>
+                  </div>
+                  <div class="media-right vm">
+                    <i class="icon-angle-right"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <div class="media pt">
+                  <div class="media-left"><i class="icon-star"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">High Score</h5>
+                    <p>Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.</p>
+                  </div>
+                  <div class="media-right vm">
+                    <i class="icon-angle-right"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <input type="text" placeholder="Search..." name="q"><i class="icon-search"></i>
+        </div>
+      </div>
+
+      <div id="tab2" role="tabpanel" class="tab-pane chat ">
+        <div class="chats-list hidden">
+          <div class="nano">
+            <div class="nano-content ph">
+              <h4 class="pb mh bb bg">Recent messages</h4>
+              <ul>
+                <li class="">
+                  <div class="media pt">
+                    <div class="media-left">
+                      <img src="/assets/img/faces/1.jpg" class="img-circle img-xs">
+                      <small class="online">online</small>
+                    </div>
+                    <div class="media-body">
+                      <h5 class="media-heading">
+                        <a href="">Claire Sassu</a><br/>
+                        <small>17 min ago</small>
+                      </h5>
+                      <p>Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.</p>
+                    </div>
+                    <div class="media-right vm">
+                      <i class="icon-angle-right"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="media pt">
+                    <div class="media-left"><img src="/assets/img/faces/2.jpg" class="img-circle img-xs"></div>
+                    <div class="media-body">
+                      <h5 class="media-heading">
+                        <a href="">Joel King</a><br/>
+                        <small>12/23/15</small>
+                      </h5>
+                      <p>Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.</p>
+                    </div>
+                    <div class="media-right vm">
+                      <i class="icon-angle-right"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="media pt">
+                    <div class="media-left"><img src="/assets/img/faces/3.jpg" class="img-circle img-xs"></div>
+                    <div class="media-body">
+                      <h5 class="media-heading">
+                        <a href="">Maggie jackson</a><br/>
+                        <small>12/23/15</small>
+                      </h5>
+                      <p>Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.</p>
+                    </div>
+                    <div class="media-right vm">
+                      <i class="icon-angle-right"></i>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <input type="text" placeholder="Search..." name="q"><i class="icon-search"></i>
+          </div>
+        </div>
+        <div class="messages-list ">
+          <div class="pa">
+            <div class="media-left">
+              <i class="icon-angle-left"></i>
+            </div>
+            <div class="media-body text-right">
+              <h4 class="mn"><a href="">Jessie Jackson</a></h4>
+              <small class="online">online</small>
+            </div>
+            <div class="media-right">
+              <img src="/assets/img/faces/1.jpg" class="img-circle img-sm">
+            </div>
+          </div>
+          <div class="nano">
+            <div class="nano-content ph">
+              <ul class="">
+                <li class="message my mb">
+                  <div class="msg">Hello</div>
+                </li>
+                <li class="message mb">
+                  <div class="msg">Hi, how are you?</div>
+                </li>
+                <li class="message mb">
+                  <div class="msg">Good, I'll need support with my pc</div>
+                </li>
+                <li class="message my mb">
+                  <div class="msg">Sure, just tell me what is going on with your computer?</div>
+                </li>
+                <li class="message mb">
+                  <div class="msg">I don't know it just turns off suddenly</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Message..." name="q" autocomplete="off">
+              <i class="icon-comment"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab3" role="tabpanel" class="tab-pane personalities ">
+        <div class="carousel">
+          <div class="personalities-list">
+            <div class="nano">
+              <div class="nano-content ph">
+                <h4 class="pb mh bb bg">Personalities</h4>
+                <ul>
+                  {{#each persons}}
+
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+            <div class="bottom">
+              <input type="text" class="add-personality" placeholder="Add new personality" name="q"><i class="icon-plus"></i>
+            </div>
+          </div>
+          <div class="personality-info">
+            {{#each persons}}
+
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <div id="tab4" role="tabpanel" class="tab-pane settings ">
+
+      </div>
+
+      <div id="tab5" role="tabpanel" class="tab-pane support active">
+
+      </div>
+    </div>
+  </div>
+</nav>
 <div class="container-fluid" id="main-container"></div>
-<!-- <div id="footer"></div> -->

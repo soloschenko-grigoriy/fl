@@ -36,10 +36,10 @@ module.exports = function (grunt) {
 
             livereload: {
                 files: [
-                    '<%= yeoman.app %>/*.html',
+                    '<%= yeoman.app %>/*.hbs',
                     '{.tmp,<%= yeoman.app %>}/assets/css/{,**/}*.css',
-                    '{.tmp,<%= yeoman.app %>}/scripts{,**/}*.js',
-                    '{.tmp,<%= yeoman.app %>}/templates/{,**/}*.hbs',
+                    '{.tmp,<%= yeoman.app %>}/scripts/{,**/}*.js',
+                    '{.tmp,<%= yeoman.app %>}/templates/{,**/}*.html',
                     '<%= yeoman.app %>/assets/img/{,*/}*.{png,jpg,jpeg,gif,webp}',
 
                     'test/spec/{,**/}*.js'
@@ -91,17 +91,17 @@ module.exports = function (grunt) {
             },
             dev: {
                 options: {
-                    script: 'server/app.js'
+                    script: 'start.js'
                 }
             },
             prod: {
                 options: {
-                    script: 'server/app.js'
+                    script: 'start.js'
                 }
             },
             test: {
                 options: {
-                    script: 'server/app.js'
+                    script: 'start.js'
                 }
             }
         },
@@ -199,7 +199,7 @@ module.exports = function (grunt) {
         },
 
         useminPrepare: {
-            html: '<%= yeoman.app %>/index.html',
+            html: '<%= yeoman.app %>/index.hbs',
             options: {
                 dest: '<%= yeoman.dist %>'
             }

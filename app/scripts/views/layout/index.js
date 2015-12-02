@@ -6,15 +6,9 @@
  */
 define([
   'backbone',
-  'communicator',
-  'dao',
-  'views/item/users/left',
   'hbs!tmpl/layout/index'
 ], function(
   Backbone,
-  Communicator,
-  DAO,
-  UserView,
   Tmpl
 ){
 
@@ -41,9 +35,7 @@ define([
      *
      * @type {Object}
      */
-    regions: {
-      user: '.user'
-    },
+    regions: {},
 
     /**
      * UI events on this view
@@ -57,20 +49,7 @@ define([
      *
      * @type {Object}
      */
-    events: {},
-
-    /**
-     * When render occurred
-     *
-     * @return {Backbone.Marionette.LayoutView}
-     */
-    onRender: function ()
-    {
-      console.log(111);
-      // this.user.show(new UserView({ model: DAO.get('user').getActivePerson() }));
-
-      return this;
-    }
+    events: {}
   });
 
 });

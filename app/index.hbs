@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FaceLess</title>
+
+
+  <link href="/scripts/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/scripts/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  <link href="/scripts/vendor/summernote/dist/summernote.css" rel="stylesheet">
+  <link href="/scripts/vendor/chosen/chosen.min.css" rel="stylesheet">
+  <link href="/scripts/vendor/nanoscroller/bin/css/nanoscroller.css" rel="stylesheet">
+  <link href="/scripts/vendor/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel='shortcut icon' type='image/x-icon' href="/assets/img/favicon.ico"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <link href="/assets/css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script data-main="/scripts/init" src="/scripts/vendor/requirejs/require.js"></script>
+
+  <script type="text/javascript">
+    var bootstrapped = {
+      fbAppId       : '{{ fbAppId }}',
+      googleAppId   : '{{ googleAppId }}',
+      tags          : '{{{ tags }}}'
+    };
+  </script>
+</head>
+<body>
+{{#if dev}}
+    <script>document.write('<script src="http://'
+      + (location.host || 'localhost').split(':')[0]
+      + ':35729/livereload.js?snipver=1"><\/script>');
+    </script>
+  {{/if}}
+</body>
+</html>

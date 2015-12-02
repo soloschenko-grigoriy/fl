@@ -6,15 +6,9 @@
  */
 define([
   'backbone',
-  'communicator',
-  'views/layout/inc/header',
-  'views/layout/inc/footer',
   'hbs!tmpl/layout/layout'
 ], function(
   Backbone,
-  Communicator,
-  HeaderView,
-  FooterView,
   Tmpl
 ){
 
@@ -41,10 +35,7 @@ define([
      *
      * @type {Object}
      */
-    regions: {
-      'headerContainer': 'nav',
-      'footerContainer' : '#footer'
-    },
+    regions: {},
 
     /**
      * UI events on this view
@@ -58,20 +49,7 @@ define([
      *
      * @type {Object}
      */
-    events: {},
-
-    /**
-     * Show occurred
-     *
-     * @return {Backbone.Marionette.LayoutView}
-     */
-    onRender: function()
-    {
-      this.headerContainer.show(new HeaderView());
-      // this.footerContainer.show(new FooterView());
-
-      return this;
-    }
+    events: {}
   });
 
 });
