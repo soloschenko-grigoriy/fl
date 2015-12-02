@@ -228,6 +228,13 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     '<%= yeoman.dist %>/assets/css/style.css': [
+                        '<%= yeoman.app %>/scripts/vendor/bootstrap/dist/css/bootstrap.min.css',
+                        '<%= yeoman.app %>/scripts/vendor/bootstrap-select/dist/css/bootstrap-select.min.css',
+                        '<%= yeoman.app %>/scripts/vendor/summernote/dist/summernote.css',
+                        '<%= yeoman.app %>/scripts/vendor/nanoscroller/bin/css/nanoscroller.css',
+                        '<%= yeoman.app %>/scripts/vendor/chosen/chosen.min.css',
+                        '<%= yeoman.app %>/scripts/vendor/components-font-awesome/css/font-awesome.min.css',
+
                         '.tmp/assets/css/{,*/}*.css',
                         '<%= yeoman.app %>/assets/css/{,*/}*.css'
                     ]
@@ -251,7 +258,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>',
-                    src: '*.html',
+                    src: '*.hbs',
                     dest: '<%= yeoman.dist %>'
                 }]
             }
@@ -293,8 +300,6 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'assets/img/{,*/}*.{webp,gif,ico}',
                         'scripts/vendor/requirejs/require.js',
-                        'scripts/vendor/bootstrap/dist/css/bootstrap.min.css',
-                        'scripts/vendor/components-font-awesome',
                         'assets/fonts/{,*/}*.{eot,svg,woff,woff2,ttf}'
                     ]
                 }]

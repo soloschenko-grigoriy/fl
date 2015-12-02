@@ -47,7 +47,6 @@ app.use(multer({
 }));
 
 // Static files middleware
-app.use(serveStatic(config.templates));
 app.use(express.static(config.root + config.publicDir));
 app.use(express.static(config.root + '.tmp'));
 

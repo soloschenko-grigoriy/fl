@@ -7,15 +7,16 @@ INSTALL:
 - brew install imagemagick
 - brew install mongodb
 - brew install phantomjs
-- npm install -g yo grunt-cli bower
-- npm install -g mocha-phantomjs
-- npm install (-g) generator-mocha-amd
-- npm install (-g) generator-marionette
+- npm install -g grunt-cli bower mocha-phantomjs
 - npm install
 - bower install
 - copy and edit config.js
 
-START (on dev):
+GENERATE NEW REST MODULE:
+--------------
+- node gen %_MODULE_NAME_%
+
+START:
 --------------
 - grunt
 
