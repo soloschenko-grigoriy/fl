@@ -1,6 +1,6 @@
 {
-  "name": "mar",
-  "version": "0.0.0",
+  "name": "FL",
+  "version": "0.0.1",
   "dependencies": {
     "bootstrap": "latest",
     "jquery": "latest",
@@ -26,5 +26,5 @@
     "components-font-awesome":"4.4.0"
   },
   "devDependencies": {},
-  "directory": "bower_components"
+  "directory": "app/scripts/vendor"
 }
