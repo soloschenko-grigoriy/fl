@@ -365,7 +365,7 @@ module.exports = function (grunt) {
         'remove:before',
         'createDefaultTemplate',
         'handlebars',
-        // 'compass:dist',
+        'compass:dist',
         'useminPrepare',
         'requirejs',
         'imagemin',
