@@ -1,1 +1,2 @@
+mkdir /var/www/fl/dist
 put -rp ./dist /var/www/fl
